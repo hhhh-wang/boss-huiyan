@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "BOSS慧眼 - 智能HR状态助手",
+  "version": "0.1",
+  "description": "让您快速找到在线HR，提升求职效率的BOSS直聘智能助手",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.zhipin.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.zhipin.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+} 
